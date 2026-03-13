@@ -466,9 +466,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   changePerTime: 1
   mats:
-  - {fileID: 2100000, guid: 49efb07b4463f1649a109aacea5951ea, type: 2}
+  - {fileID: 2100000, guid: 1e3ea4a6436132e408b7648dc3bea427, type: 2}
   - {fileID: 2100000, guid: e0d2c75123e574943a65f946dcb35f15, type: 2}
-  - {fileID: 2100000, guid: fe4f04e6b1ac3fa4fbc07a0747d8d180, type: 2}
+  - {fileID: 2100000, guid: ff62dac18c69ef14eac3155646e1b39d, type: 2}
 --- !u!135 &1117816617
 SphereCollider:
   m_ObjectHideFlags: 0

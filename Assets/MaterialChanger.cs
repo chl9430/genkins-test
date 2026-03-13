@@ -11,6 +11,14 @@ public class MaterialChanger : MonoBehaviour
     int curMatIdx;
     MeshRenderer renderer;
 
+    void Start()
+    {
+        if (renderer == null)
+            renderer = GetComponent<MeshRenderer>();
+
+        renderer.material = mats[0];
+    }
+
     private void Update()
     {
         curTime += Time.deltaTime;
