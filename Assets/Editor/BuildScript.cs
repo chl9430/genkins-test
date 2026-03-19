@@ -6,6 +6,8 @@ public class BuildScript
 {
     public static void PerformBuild()
     {
+        EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Android, BuildTarget.Android);
+
         string[] scenes = { "Assets/Scenes/Playground.unity" }; // 실제 씬 경로로 수정하세요
         string buildPath = "Builds/Test.apk"; // 확장자를 .apk로 변경
 
