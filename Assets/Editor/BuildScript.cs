@@ -21,6 +21,7 @@ public class BuildScript
         opt.scenes = new[] { "Assets/Scenes/Playground.unity" };
         opt.locationPathName = "Builds/Android/Test.apk";
         opt.target = BuildTarget.Android;
+        opt.options = BuildOptions.AutoRunPlayer;
         BuildPipeline.BuildPlayer(opt);
     }
 }
