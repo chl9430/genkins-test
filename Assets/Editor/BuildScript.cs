@@ -7,7 +7,7 @@ public class BuildScript
     public static void PerformBuild()
     {
         string[] scenes = { "Assets/Scenes/Playground.unity" }; // 실제 씬 경로로 수정하세요
-        string buildPath = "Builds/MyGame.apk"; // 확장자를 .apk로 변경
+        string buildPath = "Builds/Test.apk"; // 확장자를 .apk로 변경
 
         BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
         buildPlayerOptions.scenes = scenes;
@@ -16,6 +16,17 @@ public class BuildScript
         buildPlayerOptions.options = BuildOptions.None;
 
         BuildReport report = BuildPipeline.BuildPlayer(buildPlayerOptions);
-        // ... 생략 (나머지 로그 출력 부분)
+        BuildSummary summary = report.summary;
+
+        if (summary.result == BuildResult.Succeeded)
+        {
+            Debug.Log("Build Succeeded!");
+        }
+        if (summary.result == BuildResult.Failed)
+        {
+            Debug.Log("Build Failed!");
+            // 여기서 강제로 에러를 발생시켜서 젠킨스가 인지하게 함
+            EditorApplication.Exit(1);
+        }
     }
 }
