@@ -165,8 +165,11 @@ namespace StarterAssets
             _jumpTimeoutDelta = JumpTimeout;
             _fallTimeoutDelta = FallTimeout;
 
-            sensitivitySlider.value = 1.0f;
-            SensitiveChange(sensitivitySlider.value);
+            if (sensitivitySlider != null)
+            {
+                sensitivitySlider.value = 1.0f;
+                SensitiveChange(sensitivitySlider.value);
+            }
         }
 
         private void Update()
