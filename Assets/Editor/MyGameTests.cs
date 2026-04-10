@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using UnityEngine;
+using UnityEditor;
 
 // [TestFixture]는 이 클래스가 테스트를 포함하고 있음을 유니티에 알립니다.
 [TestFixture]
