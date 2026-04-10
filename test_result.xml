@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Failed(Child)" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-04-10 14:38:04Z" end-time="2026-04-10 14:38:04Z" duration="0.0285944">
+  <test-suite type="TestSuite" id="1018" name="Test" fullname="Test" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2026-04-10 14:38:04Z" end-time="2026-04-10 14:38:04Z" duration="0.028594" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1003" name="Assembly-CSharp-Editor.dll" fullname="C:/Users/Chris/Desktop/game-programming/Jenkins/jenkins-test/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2026-04-10 14:38:04Z" end-time="2026-04-10 14:38:04Z" duration="0.007062" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="19872" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1001" name="MyGameTests" fullname="MyGameTests" classname="MyGameTests" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2026-04-10 14:38:04Z" end-time="2026-04-10 14:38:04Z" duration="0.006432" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1002" name="SimpleArithmeticTest" fullname="MyGameTests.SimpleArithmeticTest" methodname="SimpleArithmeticTest" classname="MyGameTests" runstate="Runnable" seed="729718099" result="Failed" start-time="2026-04-10 14:38:04Z" end-time="2026-04-10 14:38:04Z" duration="0.004557" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <failure>
+            <message><![CDATA[  10 + 20은 30이어야 합니다.
+  Expected: 0
+  But was:  30
+]]></message>
+            <stack-trace><![CDATA[at MyGameTests.SimpleArithmeticTest () [0x00020] in C:\Users\Chris\Desktop\game-programming\Jenkins\jenkins-test\Assets\Editor\MyGameTests.cs:19
+]]></stack-trace>
+          </failure>
+          <output><![CDATA[[TestLog] Expected: 0, Actual: 30
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+    <test-suite type="Assembly" id="1006" name="Unity.Addressables.DocExampleCode.Editor.Tests.dll" fullname="C:/Users/Chris/Desktop/game-programming/Jenkins/jenkins-test/Library/ScriptAssemblies/Unity.Addressables.DocExampleCode.Editor.Tests.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-04-10 14:38:04Z" end-time="2026-04-10 14:38:04Z" duration="0.013274" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="19872" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1007" name="AddressableAssets" fullname="AddressableAssets" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-04-10 14:38:04Z" end-time="2026-04-10 14:38:04Z" duration="0.009219" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1008" name="DocExampleCode" fullname="AddressableAssets.DocExampleCode" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-04-10 14:38:04Z" end-time="2026-04-10 14:38:04Z" duration="0.002336" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1004" name="TestStub" fullname="AddressableAssets.DocExampleCode.TestStub" classname="AddressableAssets.DocExampleCode.TestStub" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-04-10 14:38:04Z" end-time="2026-04-10 14:38:04Z" duration="0.001240" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1005" name="RequiredTest" fullname="AddressableAssets.DocExampleCode.TestStub.RequiredTest" methodname="RequiredTest" classname="AddressableAssets.DocExampleCode.TestStub" runstate="Runnable" seed="482403402" result="Passed" start-time="2026-04-10 14:38:04Z" end-time="2026-04-10 14:38:04Z" duration="0.000160" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/Chris/AppData/LocalLow/JHCompany/Test\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
