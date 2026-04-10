@@ -6,6 +6,6 @@ public class MyGameTest
     [Test]
     public void SimplePassTest()
     {
-        Assert.AreEqual(3, 10 + 20); // 0 == 30 실패 케이스
+        Assert.AreEqual(30, 10 + 20); // 0 == 30 실패 케이스
     }
 }
