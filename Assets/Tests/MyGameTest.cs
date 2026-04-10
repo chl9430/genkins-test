@@ -7,6 +7,6 @@ public class MyGameTest
     [Test] // [UnityTest]가 아닙니다!
     public void MySimpleTest()
     {
-        Assert.AreEqual(0, 10 + 20);
+        Assert.AreEqual(30, 10 + 20);
     }
 }
